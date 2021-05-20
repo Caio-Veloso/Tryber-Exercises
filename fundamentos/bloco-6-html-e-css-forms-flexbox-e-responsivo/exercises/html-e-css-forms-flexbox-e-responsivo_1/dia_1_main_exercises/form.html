@@ -11,7 +11,7 @@
     <form action="" method="get">
       <fieldset class="personal-data">
         <legend>Dados pessoais</legend>
-        <div>
+        <div class="line-content">
           <label for="input-name">Nome:</label>
           <input
             type="text"
@@ -21,7 +21,7 @@
             required
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="input-email">Email:</label>
           <input
             type="text"
@@ -31,7 +31,7 @@
             required
           />
         </div>
-        <div>
+        <div class="line-content">
           <label for="input-cpf">CPF:</label>
           <input
             type="text"
@@ -41,8 +41,8 @@
             required
           />
         </div>
-				<div>
-					<label for="input-endereco">Endereço:</label>
+        <div class="line-content">
+          <label for="input-endereco">Endereço:</label>
           <input
             type="text"
             name="endereco"
@@ -50,16 +50,16 @@
             maxlength="200"
             required
           />
-				</div>
-        <div>
+        </div>
+        <div class="line-content">
           <label for="input-cidade">Cidade:</label>
           <input
-          type="text"
-          name="cidade"
-          id="input-endereco"
-          maxlength="28"
-          required
-        />
+            type="text"
+            name="cidade"
+            id="input-endereco"
+            maxlength="28"
+            required
+          />
         </div>
         <div>
           <label for="input-estado">Estado:</label>
@@ -67,11 +67,37 @@
         </div>
         <div>
           <p>Tipo:</p>
-          <input type="radio" name="tipo" id="input-tipo"> 
+          <input type="radio" name="tipo" id="input-tipo" />
           <label for="input-tipo">Apartamento</label>
-          <input type="radio" name="tipo" id="input-tipo2">
+          <input type="radio" name="tipo" id="input-tipo2" />
           <label for="input-tipo2">Casa</label>
         </div>
+      </fieldset> 
+      <fieldset class="personal-data">
+        <legend>Experiências</legend>
+        <div>
+          <label for="input-resume"></label> Resumo do currículo:
+          <textarea
+            name="resumo"
+            id="input-resume"
+            cols="30"
+            rows="10"
+            maxlength="1000"
+          ></textarea>
+        </div>  
+        <div>
+          <label for="input-cargo"></label> Cargo:
+          <input type="text" name="cargo" id="input-cargo" maxlength="40">
+        </div>
+        <div>
+          <label for="input-descricao"></label> Descrição do cargo:
+          <input type="text" required name="descricao" id="input-descricao" maxlength="500">
+        </div>
+        <div>
+          <label for="input-dtinicio"></label> Data de início:
+          <input type="date" required name="descricao" id="input-descricao" maxlength="500">
+        </div>
+
       </fieldset>
     </form>
     <script src="script.js"></script>
