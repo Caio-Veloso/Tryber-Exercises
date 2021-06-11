@@ -17,7 +17,6 @@ const lesson1 = {
     professor: 'Maria Clara',
     turno: 'noite',
   };
-
-  const listKeys = (obj) => Object.keys(obj);
-
-  console.log(listKeys(lesson3));
+  const allLessons = {};
+  Object.assign(allLessons, {lesson1, lesson2, lesson3});
+  console.log(allLessons)  
