@@ -15,7 +15,8 @@
     
     promiseNumber
     .then(randomNumbers => [2, 3, 5, 10].map(number => randomNumbers / number))
-    .catch(()=> console.log('Promise rejeitada'));
+    .then(array => array.reduce((acc, curr) => curr + acc, 0)) // ex 5
+    .catch(()=> console.log('É mais de oito mil! Essa promise deve estar quebrada!')); // ex 4
     }
     
     fetchPromise() 

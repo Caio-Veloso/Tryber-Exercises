@@ -72,7 +72,7 @@
           <input type="radio" name="tipo" id="input-tipo2" />
           <label for="input-tipo2">Casa</label>
         </div>
-      </fieldset> 
+      </fieldset>
       <fieldset class="personal-data">
         <legend>Experiências</legend>
         <div>
@@ -84,21 +84,33 @@
             rows="10"
             maxlength="1000"
           ></textarea>
-        </div>  
+        </div>
         <div>
           <label for="input-cargo"></label> Cargo:
-          <input type="text" name="cargo" id="input-cargo" maxlength="40">
+          <input type="text" name="cargo" id="input-cargo" maxlength="40" />
         </div>
         <div>
           <label for="input-descricao"></label> Descrição do cargo:
-          <input type="text" required name="descricao" id="input-descricao" maxlength="500">
+          <input
+            type="text"
+            required
+            name="descricao"
+            id="input-descricao"
+            maxlength="500"
+          />
         </div>
         <div>
           <label for="input-dtinicio"></label> Data de início:
-          <input type="date" required name="descricao" id="input-descricao" maxlength="500">
+          <input
+            type="date"
+            required
+            name="descricao"
+            id="input-descricao"
+            maxlength="500"
+          />
         </div>
-
-      </fieldset>
+     
+      <button type="submit" id="default-btn">Enviar</button>
     </form>
     <script src="script.js"></script>
   </body>
