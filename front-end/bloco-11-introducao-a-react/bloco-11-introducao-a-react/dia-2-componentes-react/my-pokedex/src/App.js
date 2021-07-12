@@ -1,7 +1,8 @@
 
 import React from 'react';
 import pokemons from './data';
-import Pokemom from './components/Pokemom';
+import Pokedex from './components/Pokedex';
+
 
 class App extends React.Component {
   render(){
@@ -9,7 +10,7 @@ class App extends React.Component {
     return (
       <main>
         <h1>Pokedex</h1>
-       
+        <Pokedex />
       </main>
     )
   }
